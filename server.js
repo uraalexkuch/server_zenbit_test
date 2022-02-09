@@ -18,8 +18,7 @@ else
 app.get("/", (req, res) => {
   res.json({ message: "Welcome to api." });
 });
-     //https://www.db4free.net/phpMyAdmin/index.php?route=/database/structure&db=zenbitdb
-//require("./app/routes/contact.routes")(app);
+
 app.use(cors()) // Use this after the variable declaration
 app.use(compression());
 app.use((req, res, next) => {
@@ -33,8 +32,7 @@ app.use((req, res, next) => {
   next();
 });
 app.use('/api', apiRoutes);
-// set port, listen for requests
-//const PORT = process.env.PORT || 8080;
+
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}.`);
 });
