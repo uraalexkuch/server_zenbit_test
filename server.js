@@ -4,7 +4,7 @@ const compression = require('compression');
 const app = express();
 const cors = require('cors')
 let apiRoutes = require("./app/routes/api-rout");
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3030
 app.use(cors('X-Total-Count'))
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
